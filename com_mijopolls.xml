@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="xmap" method="upgrade">
+  <name>PLG_XMAP_COM_MIJOPOLLS</name>
+  <author>Spletodrom</author>
+  <creationDate>11 September 2015</creationDate>
+  <copyright>Copyright (c) 2015 Spletodrom</copyright>
+  <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+  <authorEmail>info@spletodrom.com</authorEmail>
+  <authorUrl>www.spletodrom.com</authorUrl>
+  <version>1.0.0</version>
+  <description>PLG_XMAP_COM_MIJOPOLLS_DESC</description>
+	<files>
+		<filename xmap_ext="com_mijopolls">com_mijopolls.php</filename>
+	</files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_xmap_com_mijopolls.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_xmap_com_mijopolls.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="include_ddPolls" type="list" default="1" label="PLG_XMAP_COM_MIJOPOLLS_SHOW_POLLS_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_SHOW_POLLS_DESC">
+					<option value="0">PLG_XMAP_COM_MIJOPOLLS_OPTION_NEVER</option>
+					<option value="1">PLG_XMAP_COM_MIJOPOLLS_OPTION_ALWAYS</option>
+					<option value="2">PLG_XMAP_COM_MIJOPOLLS_OPTION_XML_ONLY</option>
+					<option value="3">PLG_XMAP_COM_MIJOPOLLS_OPTION_HTML_ONLY</option>
+				</field>
+				<field name="max_ddItems" type="text" default="" label="PLG_XMAP_COM_MIJOPOLLS_MAX_POLLS_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_MAX_POLLS_DESC" />
+				<field name="max_ddAge" type="text" default="" label="PLG_XMAP_COM_MIJOPOLLS_NEWEST_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_NEWEST_DESC" />
+				<field name="@spacer" type="spacer" default="" label="PLG_XMAP_COM_MIJOPOLLS_XML_SITEMAP_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_XML_SITEMAP_DESC" />
+				<field name="ddPolls_priority" type="list" default="0.5" label="PLG_XMAP_COM_MIJOPOLLS_PIORIRY_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_PIORIRY_DESC">
+					<option value="-1">PLG_XMAP_COM_MIJOPOLLS_OPTION_USE_PARENT_MENU</option>
+					<option value="0.0">0.0</option>
+					<option value="0.1">0.1</option>
+					<option value="0.2">0.2</option>
+					<option value="0.3">0.3</option>
+					<option value="0.4">0.4</option>
+					<option value="0.5">0.5</option>
+					<option value="0.6">0.6</option>
+					<option value="0.7">0.7</option>
+					<option value="0.8">0.8</option>
+					<option value="0.9">0.9</option>
+					<option value="1">1</option>
+				</field>
+				<field name="ddPolls_changefreq" type="list" default="PLG_XMAP_COM_MIJOPOLLS_OPTION_WEEKLY" label="PLG_XMAP_COM_MIJOPOLLS_FREQUENCY_LABEL" description="PLG_XMAP_COM_MIJOPOLLS_FREQUENCY_DESC">
+					<option value="-1">PLG_XMAP_COM_MIJOPOLLS_OPTION_USE_PARENT_MENU</option>
+					<option value="always">PLG_XMAP_COM_MIJOPOLLS_OPTION_ALWAYS</option>
+					<option value="hourly">PLG_XMAP_COM_MIJOPOLLS_OPTION_HOURLY</option>
+					<option value="daily">PLG_XMAP_COM_MIJOPOLLS_OPTION_DAILY</option>
+					<option value="weekly">PLG_XMAP_COM_MIJOPOLLS_OPTION_WEEKLY</option>
+					<option value="monthly">PLG_XMAP_COM_MIJOPOLLS_OPTION_MONTHLY</option>
+					<option value="yearly">PLG_XMAP_COM_MIJOPOLLS_OPTION_YEARLY</option>
+					<option value="never">PLG_XMAP_COM_MIJOPOLLS_OPTION_NEVER</option>
+				</field>
+		  </fieldset>
+    </fields>
+	</config>
+</extension>
